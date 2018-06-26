@@ -1,0 +1,136 @@
+html, body {
+    font: 12px tahoma, arial, sans-serif;
+    color: #454545;
+    line-height: 1.3;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+table.serfframe {
+    text-align: left;
+    border-collapse: separate;
+    width: 100%;
+    border: none;
+    margin: 0;
+}
+table.serfframe td {
+    padding: 70px 5px 2px 25px;
+
+}
+table.serfframe td img {
+    /* border: solid 1px #B5BD7A; */
+}
+
+
+table.clocktable {
+    border-collapse: separate;
+    border: none;
+    position: absolute;
+    top: 10px;
+}
+table.clocktable td {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+#blockwait {
+	background: url(img/process.gif) no-repeat left top;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    left: 45px;
+}
+
+#blocktext {
+    display: block;
+	left: 55px;
+    top: 5px;
+    color: #fff;
+    position: relative;	
+}
+
+#blocktimer {
+    color: rgb(173, 118, 71);
+    font-size: 18px;
+    background: url(img/stimer.png) no-repeat left top;
+	height: 50px;
+    position: absolute;
+    top: 10px;
+	left: 35px;
+}
+#blocktimer input {
+    text-align: left;
+    color: rgb(173, 118, 71);
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+}
+#blocktimer span{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+.serfnum {
+    font: 12px Tahoma, Arial, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.7;
+    background: url(img/btn-serf.png) no-repeat left top;
+    height: 21px;
+    width: 21px;
+    vertical-align: middle;
+    display: block;
+    display: inline-block; /*ie*/
+    text-decoration: none;
+    outline: none;
+    border: none;
+    margin: 2px;
+    padding: 0 0 0 0;
+    cursor: pointer;
+}
+.serfnum:hover {
+    background-position: left bottom;
+}
+div.blockerror {
+    color: #AF0032;
+    font-size: 16px;
+    background: url(img/118.png) no-repeat left top;
+    display: block;
+    padding-left: 55px;
+    padding-top: 6px;
+    height: 48px;
+    margin-top: 4px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+}
+div.blockerror span{
+    font-size: 12px;
+}
+div.blocksuccess {
+    color: #5B9F00;
+    font-size: 16px;
+    background: url(img/80.png) no-repeat left top;
+    display: block;
+    padding-left: 55px;
+    padding-top: 6px;
+    height: 48px;
+    margin-top: 4px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+}
+div.blocksuccess span{
+    font-size: 12px;
+}
+
+.loading {
+    color: #367C91;
+    text-align: left;
+    margin-top:5px;
+    background:url(img/loading2.gif) no-repeat left top;
+    padding-bottom: 27px;
+    margin-left: 40px;
+    border: none;
+    display: block;
+}

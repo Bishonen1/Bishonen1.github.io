@@ -1,0 +1,92 @@
+DirectoryIndex index.php
+RewriteEngine On
+
+AddDefaultCharset CP1251
+
+# Основной домен
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+
+
+# Главная
+RewriteRule ^index.html$ index.php [L]
+
+# Правила
+RewriteRule ^rules(/?)+$ index.php?menu=rules [L]
+
+# Вопросы
+RewriteRule ^help(/?)+$ index.php?menu=help [L]
+
+# Топ
+RewriteRule ^top(/?)+$ index.php?menu=top [L]
+
+# Контакты
+RewriteRule ^contacts(/?)+$ index.php?menu=contacts [L]
+
+# Новости
+RewriteRule ^news(/?)+$ index.php?menu=news [L]
+
+# О нас
+RewriteRule ^login(/?)+$ index.php?menu=login [L]
+
+# О нас
+RewriteRule ^about(/?)+$ index.php?menu=about [L]
+
+# Регистрация
+RewriteRule ^signup/key/(.*)(/?)+$ index.php?menu=signup&key=$1 [L]
+RewriteRule ^signup(/?)+$ index.php?menu=signup [L]
+
+# Восстановление пароля
+RewriteRule ^recovery(/?)+$ index.php?menu=recovery [L]
+
+# Последние выплаты
+RewriteRule ^payments(/?)+$ index.php?menu=payments [L]
+
+
+
+# Пользователи
+RewriteRule ^users/([0-9]+)(/?)+$ index.php?menu=users&page=$1 [L]
+RewriteRule ^users(/?)+$ index.php?menu=users [L]
+
+# чат
+RewriteRule ^chat/([a-z]+)/([a-zA-Z0-9]+)(/?)+$ index.php?menu=chat&t=$1&id=$2 [L]
+RewriteRule ^account/chat(/?)+$ index.php?menu=account&sel=chat [L]
+
+# Отзывы
+RewriteRule ^otziv(/?)+$ index.php?menu=otziv [L]
+
+# Аккаунт
+RewriteRule ^account/lottery/winners(/?)+$ index.php?menu=account&sel=lottery&winners [L]
+RewriteRule ^account/lottery(/?)+$ index.php?menu=account&sel=lottery [L]
+RewriteRule ^account/bonus(/?)+$ index.php?menu=account&sel=bonus [L]
+RewriteRule ^account/config(/?)+$ index.php?menu=account&sel=config [L]
+RewriteRule ^account/insert(/?)+$ index.php?menu=account&sel=insert [L]
+RewriteRule ^account/payment/([0-9]+)(/?)+$ index.php?menu=account&sel=payment&pay_id=$1 [L]
+RewriteRule ^account/payment(/?)+$ index.php?menu=account&sel=payment [L]
+RewriteRule ^account/market(/?)+$ index.php?menu=account&sel=market [L]
+RewriteRule ^account/swap(/?)+$ index.php?menu=account&sel=swap [L]
+RewriteRule ^account/store(/?)+$ index.php?menu=account&sel=store [L]
+RewriteRule ^account/referals(/?)+$ index.php?menu=account&sel=referals [L]
+RewriteRule ^account/farm(/?)+$ index.php?menu=account&sel=farm [L]
+
+#серфинг
+RewriteRule ^account/serfing(/?)+$ index.php?menu=account&sel=serfing [L]
+RewriteRule ^account/serfing/edit/([0-9]+)(/?)+$ index.php?menu=account&sel=serfing_add&advedit=$1 [L]
+RewriteRule ^account/serfing/delete/([0-9]+)(/?)+$ index.php?menu=account&sel=serfing&delete=$1 [L]
+RewriteRule ^account/serfing/add(/?)+$ index.php?menu=account&sel=serfing_add [L]
+RewriteRule ^account/serfing/cabinet(/?)+$ index.php?menu=account&sel=serfing_cabinet [L]
+RewriteRule ^account/serfing/moder(/?)+$ index.php?menu=account&sel=serfing_moder [L]
+RewriteRule ^account/serfing/view/([0-9]+)(/?)+$ _serfing_view.php?view=$1 [L]
+RewriteRule ^account/insert_serf(/?)+$ index.php?menu=account&sel=insert_serf [L]
+RewriteRule ^account/payment_serf/([0-9]+)(/?)+$ index.php?menu=account&sel=payment_serf&pay_id=$1 [L]
+RewriteRule ^account/payment_serf(/?)+$ index.php?menu=account&sel=payment_serf [L]
+RewriteRule ^competition(/?)+$ index.php?menu=competition [L]
+RewriteRule ^competition/list(/?)+$ index.php?menu=competition&list [L]
+RewriteRule ^account/exit(/?)+$ index.php?menu=account&sel=exit [L]
+RewriteRule ^account(/?)+$ index.php?menu=account [L]
+# Аватарка
+RewriteRule ^account/igrun(/?)+$ index.php?menu=account&sel=igrun [L]
+#Камикадзе2
+RewriteRule ^account/kamikadze2(/?)+$ index.php?menu=account&sel=kamikadze2 [L]
+#Орел или Решка
+RewriteRule ^account/penny(/?)+$ index.php?menu=account&sel=penny [L]
+RewriteRule ^account/auc(/?)+$ index.php?menu=account&sel=auc [L]

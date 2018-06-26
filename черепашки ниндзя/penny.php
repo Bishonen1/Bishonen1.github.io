@@ -1,0 +1,1 @@
+<center><img src="/orelreshka/stoped/stoped.gif" name='example_img' style="width: 550px;"><img src="/orelreshka/mislstoped.png" style="margin-top: -396px; margin-left: 135px;"></center>
